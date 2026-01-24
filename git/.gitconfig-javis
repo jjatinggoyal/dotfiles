@@ -1,0 +1,5 @@
+[user]
+	email = jatin.goyal@javis.ai
+
+[core]
+	sshCommand = ssh -i ~/.ssh/javis -o IdentitiesOnly=yes

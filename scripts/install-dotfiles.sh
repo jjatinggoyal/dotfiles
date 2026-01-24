@@ -27,8 +27,9 @@ backup_and_link() {
 backup_and_link "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
 [[ -f "$DOTFILES_DIR/zsh/.p10k.zsh" ]] && backup_and_link "$DOTFILES_DIR/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
 
-# Git (optional - uncomment if you want to symlink gitconfig)
-# backup_and_link "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
+# Git
+backup_and_link "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
+backup_and_link "$DOTFILES_DIR/git/.gitconfig-javis" "$HOME/.gitconfig-javis"
 
 echo ""
 echo "==> Dotfiles installed!"
